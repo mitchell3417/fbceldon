@@ -1,0 +1,35 @@
+.login {
+  background: #8AC249;
+}
+
+.login h1 a {
+  background-image: url('../images/logo-login.png') !important;
+  background-size: 225px 50px !important;
+  width: 225px !important;
+  height: 50px !important;
+}
+
+.login #loginform {
+  margin-top: 0;
+  padding-bottom: 26px;
+  border-radius: 4px;
+}
+
+.login .button-primary {
+  background: #8AC249;
+  border-color: #6DA02F;
+  text-shadow: none;
+  box-shadow: none;
+}
+
+.login .button-primary:hover {
+  background: #6DA02F;
+}
+
+.login #backtoblog a, .login #nav a {
+  color: rgba(255,255,255,.6);
+}
+.login #backtoblog a:hover, .login #nav a:hover,
+.login #backtoblog a:focus, .login #nav a:focus {
+  color: rgba(255,255,255,.8);
+}

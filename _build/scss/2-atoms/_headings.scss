@@ -1,0 +1,68 @@
+/*scss/atoms/_headings.scss*/
+
+/*
+*******************************************************************
+HEADINGS
+- via: https:/csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/
+- via: https://github.com/modularscale/modularscale-sass
+*******************************************************************
+*/
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: $space--xs 0;
+  line-height: 1.25;
+}
+h1, .alpha   {font-size: ms(4);}
+h2, .beta    {font-size: ms(3);}
+h3, .gamma   {font-size: ms(2);}
+h4, .delta   {font-size: ms(1);}
+h5, .epsilon {font-size: ms(0);}
+h6, .zeta    {font-size: ms(-1);}
+
+/*Extra Large Headings*/
+.giga{
+  @include font-size(80);
+  line-height:1.2;    /* 96px */
+}
+.mega{
+  @include font-size(64);
+  line-height:1.125;  /* 72px */
+}
+.kilo{
+  @include font-size(48);
+  line-height:1;      /* 48px */
+}
+
+/*
+*******************************************************************
+ALTERNATE HEADINGS
+*******************************************************************
+*/
+h1.alt, .alpha.alt, h2.alt, .beta.alt, h3.alt, .gamma.alt, h4.alt, .delta.alt, h5.alt, .epsilon.alt, h6.alt, .zeta.alt {
+  color: $gray-600;
+  text-transform: uppercase;
+}
+h1.alt, .alt.alpha   {font-size: ms(3);}
+h2.alt, .alt.beta    {font-size: ms(2);}
+h3.alt, .alt.gamma   {font-size: ms(1);}
+h4.alt, .alt.delta   {font-size: ms(0);}
+h5.alt, .alt.epsilon {font-size: ms(-1);}
+h6.alt, .alt.zeta    {font-size: ms(-2);}
+
+
+@include medium {
+  h1, .alpha   {font-size: ms(5);}
+  h2, .beta    {font-size: ms(4);}
+  h3, .gamma   {font-size: ms(3);}
+  h4, .delta   {font-size: ms(2);}
+  h5, .epsilon {font-size: ms(1);}
+  h6, .zeta    {font-size: ms(0);}
+
+  h1.alt, .alt.alpha   {font-size: ms(4);}
+  h2.alt, .alt.beta    {font-size: ms(3);}
+  h3.alt, .alt.gamma   {font-size: ms(2);}
+  h4.alt, .alt.delta   {font-size: ms(1);}
+  h5.alt, .alt.epsilon {font-size: ms(0);}
+  h6.alt, .alt.zeta    {font-size: ms(-1);}
+}

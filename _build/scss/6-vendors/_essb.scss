@@ -1,0 +1,19 @@
+/*scss/vendors/_essb.scss*/
+
+/*
+*******************************************************************
+ESSB STYLES
+- Styling Overrides for Easy Social Sharing Plugin
+*******************************************************************
+*/
+.essb_links li, .essb_links li a, .essb_links li a .essb_icon, .essb_links li a .essb_network_name, .essb_links ul {
+  font-family: $sans !important;
+  font-weight: bold;
+  font-size: 14px !important;
+}
+.essb_links_list {
+  display: flex;
+  justify-content: center;
+}
+
+

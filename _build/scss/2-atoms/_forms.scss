@@ -1,0 +1,144 @@
+/*scss/atoms/_forms.scss*/
+
+/*
+*******************************************************************
+CORE FORM STYLES
+*******************************************************************
+*/
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  padding: 0;
+  width: inherit;
+  min-width: inherit;
+  min-height: inherit;
+  display: inline;
+  clear: both;
+}
+input[type="search"] {
+  box-sizing:         content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+  display: inline-block;
+  padding: $space--s;
+  width: 100%;
+  color: $gray-900;
+  border: 2px solid $gray-200;
+  @include rounded(3px);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  &:focus {
+    border-color: #aaa;
+  }
+}
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+abbr[title="required"], abbr[title="Required"], .required {
+  border-bottom: none;
+  color: #911;
+}
+
+/*
+*******************************************************************
+DEFAULT FORM STYLES
+- Labels, input, select, textarea
+*******************************************************************
+*/
+label, legend {
+  font-size: ms(0);
+  font-weight: bold;
+  display: block;
+  margin-bottom: $space--xxs;
+  color: $gray-900;
+  vertical-align: middle;
+  text-transform: lowercase;
+  line-height: 1.25em;
+}
+select {
+  font-size: ms(0);
+  padding: 0.5em 1.5em 0.5em 0.5em;
+  height: 40px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  line-height: 1.4em;
+  width: 100%;
+
+  &::after {
+    content: '';
+  }
+}
+.field {
+  margin-bottom: 1em;
+}
+
+
+/*------------------------------------*\
+    $SPECIFIC FORMS
+\*------------------------------------*/
+
+/*
+*******************************************************************
+SEARCH FORM
+*******************************************************************
+*/
+.form--search {
+  position: relative;
+  box-sizing: border-box;
+}
+.form--search__field {
+  font-weight: normal;
+  position: absolute;
+  left: -100px;
+  top: -25px;
+  width: 200% !important;
+  width: calc(100% + 100px) !important;
+
+  &::placeholder {
+    color: $gray-700;
+  }
+
+  @include medium {
+    position: relative;
+    width: 100% !important;
+    top: inherit;
+    left: inherit;
+  }
+}
+.form--search__submit {
+  position: absolute;
+  display: block;
+  padding: 10px;
+  right: 5px;
+  top: 50%;
+  margin-top: -24px;
+  border: none;
+  background: url('images/i-search.svg') 50% 50% no-repeat;
+  background-size: 20px 20px;
+  width: 40px;
+  height: 44px;
+}
+

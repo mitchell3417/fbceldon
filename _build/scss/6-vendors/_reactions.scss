@@ -1,0 +1,203 @@
+/*
+*******************************************************************
+REACTIONS PLUGIN STYLES
+All plugin styles removed and these custom styles used instead
+*******************************************************************
+*/
+
+/* Main Reaction Button Area */
+.reaction_buttons{
+  margin-top: $space--xl;
+  margin-bottom: $space--xl;
+  padding: $space--xl 0;
+  border-top: 1px solid $gray-100;
+  border-bottom: 1px solid $gray-100;
+  font-size: ms(0);
+  text-align: left;
+  clear: both;
+
+  & > ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
+
+/* Headline */
+.reaction_buttons_tagline {
+  font-weight: bold;
+  text-align: center;
+  font-size: ms(1);
+  text-transform: lowercase;
+}
+
+/* Single Button */
+.reaction_button {
+  flex-basis: 50%;
+  max-width: 50%;
+  line-height: 2em;
+  cursor: pointer;
+  list-style: none;
+  text-align: center;
+  display: inline-block;
+  text-transform: lowercase;
+  border-radius: 6px;
+  transition: 0.2s all ease-in;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 85px;
+    height: 85px;
+    margin: 0 auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 70px 70px;
+  }
+
+  &:hover, &:focus {
+    background: $gray-100;
+
+    &::before {
+      background-size: 80px 80px;
+    }
+  }
+
+  @include small {
+    flex-basis: 33.3333%;
+    max-width: 33.33333%;
+  }
+  @include medium {
+    flex-basis: 20%;
+    max-width: 20%;
+  }
+}
+
+/*Top Reaction Buttons*/
+.header--post + .reaction_buttons {
+  margin-top: $space--m;
+  margin-bottom: $space--m;
+  padding: $space--s 0;
+  display: none;
+
+  @include small {
+    display: block;
+  }
+
+  .reaction_buttons_tagline {
+    display: none; /*hide headline for top reaction buttons*/
+  }
+  .reaction_button {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: ms(-1);
+    flex-basis: inherit;
+    max-width: inherit;
+    margin: 0 $space--xxs;
+    padding: $space--xxs;
+
+    &::before {
+      width: 30px;
+      height: 30px;
+      background-size: 30px 30px;
+      margin: 0 $space--xxs 0 0;
+    }
+
+    &:hover, &:focus {
+      &::before {
+        background-size: 30px 30px;
+      }
+    }
+
+  }
+}
+
+
+
+
+
+/* special setings for display as a graph,
+ * inspired by https://geoffgraham.me/creating-a-responsive-css-bar-chart/ */
+div.reaction_buttons ul.graph {
+    clear: both;
+    padding: 0;
+    width: 90%;
+}
+div.reaction_buttons ul.graph li.reaction_button {
+    height: 125px;
+    padding: 0;
+    position: relative;
+    vertical-align: bottom;
+    margin: 0 auto;
+    padding-left: 10px;
+    text-align: left;
+    display: block;
+
+    background: #4ecdc4;
+    border: 1px solid #4ecdc4;
+    background-image: -moz-linear-gradient(#76d8d1, #4ecdc4 70%);
+    background-image: -webkit-linear-gradient(#76d8d1, #4ecdc4 70%);
+    background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px;
+    border-radius: 4px 4px 0 0;
+    -moz-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+    -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+    box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.6);
+}
+@media (min-width: 700px) {
+    div.reaction_buttons ul.graph {
+        height: 250px;
+        width: 100%;
+    }
+    div.reaction_buttons ul.graph li.reaction_button {
+        height: 250px;
+        margin: 0 1.8% 0 0;
+        padding: 0;
+        width: 17%;
+        display: inline-block;
+    }
+    div.reaction_buttons ul.graph li.reaction_button span.button_name {
+        bottom: -4em;
+        position: absolute;
+    }
+    div.reaction_buttons ul.graph li.reaction_button span.braces {
+        display: none;
+    }
+    div.reaction_buttons ul.graph li.reaction_button span.count_number {
+        bottom: 3px;
+        position: absolute;
+        font-size: 2em;
+        font-weight: bold;
+    }
+}
+
+/* the button after voting */
+div.reaction_buttons li.voted,
+div.reaction_buttons li.voted:hover {
+    cursor: default;
+}
+
+/* number of votes including parantheses.
+.reaction_buttons .reaction_button .count {
+}
+ */
+
+/* number of votes in between the parantheses.
+.reaction_buttons .reaction_button .count_number {
+}
+ */
+
+/* simple sidebar settings */
+#sidebar div.widget_reaction_buttons h3 {
+  margin: 0;
+  margin-top: 4px;
+  font-size: 1.1em;
+}
+
+#sidebar div.widget_reaction_buttons ol {
+  margin-left: 25px;
+}

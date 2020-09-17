@@ -1,0 +1,63 @@
+/*scss/atoms/_icons.scss*/
+
+/*
+*******************************************************************
+SEARCH ICON
+*******************************************************************
+*/
+.i-search {
+  width: 14px;
+  height: 14px;
+  margin-right: $space--xxs;
+  fill: $gray-800;
+}
+
+
+/*
+*******************************************************************
+MENU/CATEGORY ICON STYLES
+*******************************************************************
+*/
+.menu-item.menu-item--icon > a,
+.card__category,
+.heading--category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    content: "";
+    width: 26px;
+    height: 26px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    display: block;
+    margin-right: $space--xs;
+  }
+}
+.nav--primary .menu-item.menu-item--icon > a {
+  justify-content: flex-start;
+
+  @include medium {
+    justify-content: center;
+  }
+}
+.icon--faded, .list-item .card__category::before, .card .card__category::before {
+  filter: grayscale(100%);
+  opacity: 0.5;
+}
+.header--post .card__category,
+.heading--category {
+  &::before {
+    width: 36px;
+    height: 36px;
+    background-size: 36px 36px;
+
+    @include medium {
+      width: 48px;
+      height: 48px;
+      background-size: 48px 48px;
+    }
+  }
+}
+

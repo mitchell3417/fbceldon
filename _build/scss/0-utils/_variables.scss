@@ -1,0 +1,34 @@
+/*scss/utils/_variables.scss*/
+
+/****** COLORS ******/
+
+/*Color variables declared in /scss/base/_colors.scss*/
+
+
+/****** TYPOGRAPHY ******/
+
+/*Font variables declared in /scss/base/_fonts.scss*/
+
+/*Responsive Typography*/
+/*Taken from https://codepen.io/MadeByMike/pen/YPJJYv*/
+/*https://gist.github.com/apautler/641178e22c9fd94f8464f97e5343b6e0*/
+
+$ms-base: 1.05em;
+$ms-ratio: $minor-third; /*1.2*/
+
+
+
+/****** LAYOUT ******/
+$max-width: 72em;
+
+/****** SPACING ******/
+
+/*Spacing layout variables declared in /scss/base/_layout.scss*/
+
+
+/****** BREAKPOINTS ******/
+$small-width: 48em;
+$medium-width: 55em;
+$large-width: 65.625em;
+$xl-width: 75em;
+

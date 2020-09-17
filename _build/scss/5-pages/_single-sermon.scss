@@ -1,0 +1,101 @@
+
+.single-sermons .header--primary {
+  background-color: $gray-900;
+  height: auto;
+}
+
+.section--sermon-video {
+  background-color: $gray-900;
+  color: white;
+
+  .container {
+    padding: 8em 0 2.5em;
+    @include medium {
+      padding: 7em 0 2.5em;
+    }
+  }
+}
+
+.sermon__content {
+  max-width: 768px;
+  margin: 0 auto;
+
+  h6 {
+    font-size: .7em;
+  }
+
+  p {
+    margin-top: $space--xxs;
+  }
+
+  a {
+    font-weight: normal;
+    color: white;
+    &:hover, &:focus {
+      color: darken($gray-100, 15%);
+    }
+  }
+
+  .display-none {
+    display: none;
+  }
+}
+
+.sermon__video, .sermon__audio {
+  transition: all ease-in 2s;
+}
+
+.sermon__info {
+  margin-bottom: $space--m;
+  padding: 0 10px;
+}
+
+.sermon__watch {
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.sermon__listen {
+  border-left: none;
+  border-radius: 0 3px 3px 0;
+}
+
+.sermon__watch, .sermon__listen {
+  background: transparent;
+  padding: $space--xs $space--l;
+  flex-basis: auto;
+  font-size: .6em;
+  text-transform: uppercase;
+}
+
+.sermon__watch.active, .sermon__listen.active,
+.sermon__watch:hover, .sermon__listen:hover,
+.sermon__watch:active, .sermon__listen:active,
+.sermon__watch:focus, .sermon__listen:focus {
+  color: $gray-900;
+  background-color: white;
+}
+
+.section--sermon-description {
+  background-color: white;
+}
+
+.sermon-description {
+  max-width: 748px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+
+.section--other-sermons {
+  background-color: $gray-100;
+  padding: $space--l 0;
+
+  h1 {
+    margin-bottom: $space--m;
+
+    a {
+      color: $gray-900;
+    }
+  }
+}

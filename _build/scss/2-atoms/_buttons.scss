@@ -1,0 +1,77 @@
+/*scss/atoms/_buttons.scss*/
+
+/*
+*******************************************************************
+DEFAULT BUTTON
+*******************************************************************
+*/
+.button, button {
+  display: inline-block;
+  padding: $space--xs $space--s;
+  border: 2px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+  background: $button;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  transition: .2s all ease-in-out;
+
+  &:hover, &:focus, &:active {
+    background: darken($button,10%);
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+/*
+*******************************************************************
+ALTERNATE BUTTON
+*******************************************************************
+*/
+.button--alt {
+  background: $button-alt;
+
+  &:hover, &:focus, &:active {
+    background: darken($button-alt,10%);
+  }
+}
+
+/*
+*******************************************************************
+BUTTON SIZING
+*******************************************************************
+*/
+.button--large {
+  padding: $space--l $space--xl;
+}
+.button--small {
+  padding: $space--xs $space--s;
+}
+
+/*
+*******************************************************************
+ALL CAPS BUTTON
+*******************************************************************
+*/
+.button--caps {
+  text-transform: uppercase;
+}
+
+/*
+*******************************************************************
+WHITE BUTTON
+*******************************************************************
+*/
+.button--white {
+  background: white;
+  color: $link !important;
+  border: none;
+  text-decoration: underline;
+
+  &:hover, &:focus, &:active {
+    background: white;
+    color: darken($link, 10%) !important;
+    text-decoration: underline !important;
+  }
+}

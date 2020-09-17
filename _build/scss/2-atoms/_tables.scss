@@ -1,0 +1,27 @@
+/*scss/atoms/_tables.scss*/
+
+/*
+*******************************************************************
+DEFAULT TABLE STYLES
+*******************************************************************
+*/
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid $gray-200;
+  width: 100%;
+}
+th {
+  text-align: left;
+  border: 1px solid $gray-200;
+  padding: 0.5em;
+  background: $primary;
+  color: #fff;
+}
+tr {
+  border-bottom: 1px solid $gray-200;
+}
+td {
+  border: 1px solid $gray-200;
+  padding: 0.5em;
+}

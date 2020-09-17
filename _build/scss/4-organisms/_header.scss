@@ -1,0 +1,166 @@
+/*scss/organisms/_header.scss*/
+
+/*****************************************************
+Top Navigation Bar
+*****************************************************/
+//Live stream alert
+.stream-alert {
+  width: 100%;
+  z-index: 110;
+  text-align: center;
+  background-color: red;
+  color: white;
+  a {
+    color: white;
+    padding: 14px 0 36px 0;
+    width: 100%;
+  }
+}
+
+//Site title if no logo uploaded
+.header-site-title {
+  color: $gray-100;
+  font-size: ms(1);
+  text-shadow: 2px 2px 4px $gray-800;
+}
+
+//Logo
+header {
+  height: 80px;
+  z-index: 100;
+  position: relative;
+  top: 20px;
+  width: 100%;
+  margin-bottom: -80px;
+  .container {
+    height: inherit;
+  }
+
+  .header-flex {
+    width: 100%;
+    height: inherit;
+
+    .header__logo {
+
+      a {
+        height: 100%;
+        img {
+          max-width: 200px;
+          max-height: 80px;
+          width: auto;
+          transition: all .25s;
+          @include small {
+            max-width: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.main-nav-scroll {
+  height: 60px;
+  position: fixed;
+  background-color: $brand-color-1;
+  top: 0;
+  .container {
+
+  }
+
+  .header-flex {
+
+    .header__logo {
+
+      a {
+        img {
+          max-height: 40px;
+        }
+      }
+    }
+  }
+}
+
+//Menu Button
+#menu-trigger {
+  color: $gray-100;
+  text-shadow: 2px 2px 4px $gray-800;
+  &:hover{
+    cursor:pointer;
+  }
+
+  .dashicons-menu {
+    font-size: 1.6em;
+  }
+}
+
+
+
+//Slide in navigation bar
+#right-nav{
+  position:fixed;
+  top:0;
+  width: 100%;
+  right: -100%;
+  height:100vh;
+  background:$gray-900;
+  z-index: 9999;
+  padding-top: 2em;
+  font-size: ms(2);
+  @include small {
+    right:-13em;
+    width:13em;
+    font-size: ms(0);
+  }
+
+  .close-menu a {
+    font-size: ms(-2);
+    font-family: $serif;
+    font-style: italic;
+    padding-bottom: $space--m;
+    font-weight: 100;
+
+    &:hover{
+      cursor:pointer;
+    }
+  }
+
+  ul {
+
+    > li {
+        padding: 0;
+        margin: auto;
+        height: auto;
+
+      a {
+        color: $gray-400;
+        font-family: $sans;
+        font-size: ms(-1);
+        font-weight: 600;
+        padding: $space--xxs $space--xl;
+        height: auto;
+        margin: auto;
+        width: 100%;
+        display: block;
+
+        &:hover {
+          color: lighten($gray-400, 100%)
+        }
+      }
+    }
+  }
+
+  ul.sub-menu li a {
+    padding-left: $space--xxl;
+    font-weight: 100;
+    font-size: ms(-2);
+  }
+}
+
+//Header menu button
+#menu-trigger:hover{
+  cursor:pointer;
+}
+
+.dashicons-menu {
+  font-size: 1.2em;
+}

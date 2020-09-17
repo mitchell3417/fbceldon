@@ -1,0 +1,66 @@
+/*scss/vendors/_cooking.scss*/
+
+/*
+*******************************************************************
+COOKBOOK PLUGIN STYLES
+- Styling Overrides for Cooking Recipe Plugin
+*******************************************************************
+*/
+div.cookbook-recipe {
+  color: $gray-800;
+  background: #fff;
+  border-top: 2px solid $gray-200;
+  border-bottom: 2px solid $gray-200;
+  position: relative;
+  padding-top: $space--xxl;
+  margin-top: $space--xxl;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    margin-left: -50px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url("data:image/svg+xml,%3Csvg width='26' height='26' viewBox='0 0 26 26' xmlns='https://www.w3.org/2000/svg'%3E%3Ctitle%3Eicon--recipes%3C/title%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke-width='1.25' stroke='%239B9B9B' stroke-linejoin='round'%3E%3Cpath d='M19.24 8.447c.78.78.78 2.047 0 2.828l-9.193 9.192c-.78.78-2.047.78-2.828 0l-1.415-1.414c-.78-.78-.78-2.047 0-2.83l9.192-9.19c.78-.78 2.047-.78 2.828 0l1.414 1.414z'/%3E%3Cpath d='M23.482 2.79c.357.358.545.853.514 1.358-.03.505-.28.973-.68 1.283L19.24 8.448l-1.415-1.414 3.015-4.08c.312-.398.778-.645 1.284-.677.505-.03 1 .156 1.358.514zM1.97 23.968c.355.362.847.556 1.353.53.506-.026 1.043-.332 1.36-.73l2.43-3.39-1.395-1.432-3.483 2.314c-.403.307-.69.805-.728 1.31-.038.505.11 1.035.464 1.398z'/%3E%3C/g%3E%3Cpath d='M1 1h24v24H1z'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 60px 60px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  th {
+    color: $gray-800;
+  }
+
+  .cookbook-ingredient-item h4,
+  .cookbook-subtitle,
+  .cookbook-container h4.cookbook-subtitle {
+    text-transform: uppercase;
+    font-size: ms(0);
+    margin-bottom: 0;
+  }
+
+  @media only screen and (min-width: 620px) {
+    .cookbook-extras {
+      max-width: 225px;
+    }
+  }
+}
+
+/*Comments/Rating*/
+.comment-form-cookbook-rating label {
+  display: block;
+}
+.cookbook-rating-stars {
+  font-size: 32px;
+}
+.cookbook-rating-stars .cookbook-icon {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+

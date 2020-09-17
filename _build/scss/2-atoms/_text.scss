@@ -1,0 +1,127 @@
+/*scss/atoms/_text.scss*/
+
+/*
+*******************************************************************
+DEFAULT TEXT STYLES
+*******************************************************************
+*/
+body {
+  font-size: ms(0);
+  line-height: 1.5;
+  font-family: $sans;
+  color: $gray-900;
+
+  @include medium {
+    font-size: ms(1);
+  }
+}
+
+::selection {
+  background: $link;
+  color: #fff;
+  text-shadow: none;
+}
+
+/*
+*******************************************************************
+HORIZONTAL RULE STYLES
+*******************************************************************
+*/
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(0,0,0,.2);
+  margin: $space--l 0;
+}
+
+abbr {
+    border-bottom: 1px dotted $gray-200;
+    cursor: help;
+}
+
+.content, article {
+  ol, ul {
+    list-style: initial;
+    padding-left: 1.5em;
+    margin-left: 1em;
+  }
+  ol {
+    list-style: decimal;
+  }
+}
+
+/*
+*******************************************************************
+LINK STYLES
+*******************************************************************
+*/
+a {
+  color: $link;
+  text-decoration: underline;
+  font-weight: bold;
+  transition: .2s all ease-in-out;
+
+  &:hover, &:focus, &:active {
+    color: darken($link, 10%);
+    text-decoration: none;
+  }
+}
+
+
+/*
+*******************************************************************
+TEXT ALIGNMENT STYLES
+*******************************************************************
+*/
+.text--right {
+  text-align: right;
+}
+.text--left {
+  text-align: left;
+}
+.text--center {
+  text-align: center;
+}
+
+
+/*
+*******************************************************************
+WORDPRESS CLASS STYLES
+*******************************************************************
+*/
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+.sticky {
+  position: relative;
+}
+.bypostauthor {
+  position: relative;
+}
+
+
+
+
+p, a, small, i,  {
+  text-decoration: none;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 95%;
+  box-sizing: border-box;
+}
+
+hr {
+  border: 1px solid #e8e8e8;
+  margin: $space--xxl 0;
+}

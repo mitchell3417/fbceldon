@@ -1,0 +1,49 @@
+.map-and-hours {
+  padding: $space--xxl 0;
+  .map-container {
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    iframe {
+      left: 0;
+      top:0;
+      height:100%;
+      width:100%;
+      position:absolute;
+    }
+    @include small {
+      width: 50%;
+      padding-bottom: 35%;
+    }
+  }
+  .times-container {
+    text-align: center;
+    width: 100%;
+    @include small {
+      width: 50%;
+    }
+  }
+}
+
+.service-times {
+  padding: 0 15%;
+  h5 {
+    width: 100%;
+    margin-bottom: $space--xxs;
+    text-align: left;
+  }
+  p {
+    font-family: $sans;
+    margin-bottom: $space--xs;
+    margin-top: $space--xxs;
+    text-align: left;
+    &.time {
+      width: 18%;
+    }
+    &.title {
+      width: 82%;
+    }
+  }
+}

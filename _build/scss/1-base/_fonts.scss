@@ -1,0 +1,17 @@
+/*scss/base/_fonts.scss*/
+
+/*
+*******************************************************************
+FONTS
+- Default theme fonts, custom fonts added via child theme
+*******************************************************************
+*/
+$sans: 'Raleway', Helvetica, Arial, sans-serif;
+$serif: 'Roboto Slab', Georgia, 'Times New Roman', serif;
+
+.sans{
+  font-family: $sans;
+}
+.serif{
+  font-family: $serif;
+}

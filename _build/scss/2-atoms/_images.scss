@@ -1,0 +1,64 @@
+/*scss/atoms/_images.scss*/
+
+/*
+*******************************************************************
+CORE IMAGE STYLES
+*******************************************************************
+*/
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+img.centered,
+.aligncenter {
+  display: block;
+  margin: 0 auto 24px;
+}
+img.alignnone {
+  margin: 0 auto 12px;
+  width: inherit;
+}
+img.alignleft,
+.wp-caption.alignleft {
+  margin: 0 1em 1em 0;
+  float: left;
+  max-width: 40%;
+}
+img.alignright,
+.wp-caption.alignright {
+  margin: 0 0 1em 1em;
+  float: right;
+  max-width: 40%;
+}
+.img--rounded {
+  @include rounded(4px);
+}
+.img--circle {
+  @include rounded(50%);
+}
+.img--full {
+  width: 100%;
+}
+.wp-caption-text {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+.gallery-caption {
+  color: #707070;
+  color: rgba(51, 51, 51, 0.7);
+  display: block;
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+
+/*WordPress Image Classes*/
+.wp-post-image {
+}

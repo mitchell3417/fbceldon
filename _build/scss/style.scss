@@ -1,0 +1,24 @@
+/*!
+******************************************************************
+Theme Name: FBC Eldon
+Theme URI: https://mitchellbennett.rocks/
+Author: Mitchell Bennett
+Author URI: https://mitchellbennett.rocks/
+Description: This is a custom theme built specifically for the First Baptist Church of Eldon, Missouri
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: fbceldon
+Tags:
+******************************************************************/
+
+
+@import '_modular-scale/modular-scale';
+
+@import "0-utils/_utils";
+@import "1-base/_base";
+@import "2-atoms/_atoms";
+@import "3-molecules/_molecules";
+@import "4-organisms/_organisms";
+@import "5-pages/_pages";
+@import "6-vendors/_vendors";

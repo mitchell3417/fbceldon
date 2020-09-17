@@ -1,0 +1,75 @@
+.sermons {
+  .section--intro-paragraph .container {
+    padding-bottom: 0;
+  }
+}
+
+.section--previous-series {
+  background-color: $gray-100;
+  .previous-series > div {
+    padding: 0 1.5%;
+  }
+  a {
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+    margin-bottom: 9%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.padding--none {
+  padding: 0!important;
+  margin-bottom: 0!important;
+}
+
+/*
+*******************************************************************
+RECENT SERMONS
+*******************************************************************
+*/
+.recent-sermons__sermons {
+  margin-bottom: $space--l;
+  .recent-sermons__thumbnail {
+    position: relative;
+
+
+    &:hover .play-button {
+      transform: scale(1.3);
+    }
+
+    .play-button {
+      transform: scale(1);
+      transition: all ease-in .2s;
+      height: 80%;
+      width: 80%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      background-image: url("data:image/svg+xml,%0A%3Csvg width='70px' height='70px' viewBox='0 0 70 70' version='1.1' xmlns='https://www.w3.org/2000/svg' xmlns:xlink='https://www.w3.org/1999/xlink'%3E%3C!-- Generator: Sketch 48.2 %2847327%29 - https://www.bohemiancoding.com/sketch --%3E%3Cdesc%3ECreated with Sketch.%3C/desc%3E%3Cdefs%3E%3Cpath d='M180,80 C193.793945,80 205,91.2060547 205,105 C205,118.793945 193.793945,130 180,130 C166.206055,130 155,118.793945 155,105 C155,91.2060547 166.206055,80 180,80 Z M180,126.875 C192.060547,126.875 201.875,117.109375 201.875,105 C201.875,92.9394531 192.060547,83.125 180,83.125 C167.890625,83.125 158.125,92.9394531 158.125,105 C158.125,117.109375 167.890625,126.875 180,126.875 Z M175.3125,115.9375 L175.3125,94.0625 L190.15625,105 L175.3125,115.9375 Z' id='path-1'%3E%3C/path%3E%3Cfilter x='-30.0%25' y='-30.0%25' width='160.0%25' height='160.0%25' filterUnits='objectBoundingBox' id='filter-2'%3E%3CfeOffset dx='0' dy='0' in='SourceAlpha' result='shadowOffsetOuter1'%3E%3C/feOffset%3E%3CfeGaussianBlur stdDeviation='5' in='shadowOffsetOuter1' result='shadowBlurOuter1'%3E%3C/feGaussianBlur%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.5 0' type='matrix' in='shadowBlurOuter1'%3E%3C/feColorMatrix%3E%3C/filter%3E%3C/defs%3E%3Cg id='Symbols' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='listing-sermon' transform='translate%28-145.000000, -70.000000%29'%3E%3Cg id='img'%3E%3Cg%3E%3Cg id='i-play'%3E%3Cuse fill='black' fill-opacity='1' filter='url%28%23filter-2%29' xlink:href='%23path-1'%3E%3C/use%3E%3Cuse fill='%23FFFFFF' fill-rule='evenodd' xlink:href='%23path-1'%3E%3C/use%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+
+      > a {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  small {
+    color: $gray-500;
+    a {
+      color: $gray-500;
+      font-weight: normal;
+      &:hover {
+        color: darken($gray-500, 10%);
+      }
+    }
+  }
+
+  h5 a {
+    color: $gray-900;
+  }
+}

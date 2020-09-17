@@ -1,0 +1,15 @@
+/*scss/atoms/_paragraph.scss*/
+
+/*
+*******************************************************************
+PARAGRAPH STYLES
+*******************************************************************
+*/
+.wp-post-image + p {
+  margin-top: 0; /*Remove top margin from first paragraph directly following featured image*/
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+}

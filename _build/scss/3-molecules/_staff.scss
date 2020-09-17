@@ -1,0 +1,49 @@
+.container--staff {
+  padding: $space--xl 0;
+}
+
+.ministerial-staff, .support-staff {
+  display: flex;
+  align-items: center;
+  .staff__image {
+    width: 125px;
+    height: 125px;
+    margin-right: 25px;
+    img {
+      border-radius: 50%;
+      height: 125px;
+      width: 125px;
+      max-width: none;
+    }
+  }
+  .staff__text {
+    width: 500px;
+    margin-right: 25px;
+
+    h5 {
+      margin: 0;
+    }
+
+    p, small {
+      margin: 0;
+    }
+
+    .staff__title {
+      color: $gray-600;
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}
+
+.support-staff {
+  margin-bottom: $space--xxl
+}
+
+.staff__bio {
+  margin-bottom: $space--xxl;
+  p {
+
+  }
+}
